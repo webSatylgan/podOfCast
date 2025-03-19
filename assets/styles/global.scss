@@ -1,8 +1,6 @@
-/* imports ---------------- */
-@import "reset.scss";
-@import "vars.scss";
-
+@forward "reset.scss";
 /* styles ----------------- */
+
 /* blocks */
 html {
     font-size: 16px;
@@ -15,6 +13,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     width: 100%;
 }
 
@@ -77,11 +76,11 @@ button {
     display: block;
     padding: 20px 36px;
 
-    border: 2px solid $black;
     border-radius: 8px;
     background: $black;
     box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
 
+    font-family: $font-family;
     font-weight: 700;
     font-size: .875rem;
     line-height: 160%;
@@ -95,6 +94,7 @@ button.tag {
 
     border: 1px solid #4d4d4d;
     border-radius: 4px;
+    background: transparent;
 
     font-weight: 500;
     font-size: 0.75rem;
@@ -135,7 +135,7 @@ img {
 
 /* container classes ----------- */
 .container {
-    max-width: 1480px;
+    max-width: 1200px;
     width: 100%;
 
     padding: 0 20px;

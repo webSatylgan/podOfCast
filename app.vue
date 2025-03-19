@@ -1,3 +1,6 @@
+<script>
+    import "@/assets/styles/global.scss";
+</script>
 <template>
     <template>
         <div>
