@@ -1,13 +1,13 @@
 <script setup>
 
-    import Logo from "@/components/ui/logo.vue";
+    import LogoUi from "@/components/ui/logoUi.vue";
 </script>
 
 <template>
     <div class="container">
         <div class="header flex">
             <div class="header__left-side flex">
-                <Logo class="header__logo" />
+                <LogoUi class="header__logo" />
                 <nav>
                     <a href="">Episodes</a>
                     <a href="">About</a>
@@ -31,6 +31,7 @@
         position: absolute;
         top: 25px;
         left: 50%;
+        z-index: 10;
         transform: translateX(-50%);
 
         &__left-side {
