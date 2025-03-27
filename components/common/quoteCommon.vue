@@ -1,5 +1,5 @@
 <script setup>
-    import Quote from "@/components/ui/quote.vue";
+    import QuoteUi from "@/components/ui/quoteUi.vue";
 
     const props = defineProps({
        quote: String,
@@ -8,7 +8,7 @@
 
 <template>
     <div class="quote">
-        <Quote />
+        <QuoteUi />
         <h3>{{quote}}</h3>
         <div class="flex">
             <img src="@/assets/imgs/quote.jpg" alt="">
