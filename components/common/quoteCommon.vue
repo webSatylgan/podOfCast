@@ -1,4 +1,6 @@
 <script setup>
+    import Quote from "@/components/ui/quote.vue";
+
     const props = defineProps({
        quote: String,
     });
@@ -6,7 +8,7 @@
 
 <template>
     <div class="quote">
-        <q>“</q>
+        <Quote />
         <h3>{{quote}}</h3>
         <div class="flex">
             <img src="@/assets/imgs/quote.jpg" alt="">
@@ -29,16 +31,10 @@
 
         position: relative;
 
-        q {
+        .q-symbol {
             display: block;
 
-            quotes: none;
-
-            font-weight: 700;
-            font-size: 95px;
-            letter-spacing: -0.02em;
             text-align: center;
-            color: $red;
         }
 
         h3 {
