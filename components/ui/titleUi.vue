@@ -16,9 +16,12 @@
 
 <style lang="scss">
     .title {
+        width: fit-content;
         margin: 0 auto;
 
         text-align: center;
+
+        position: relative;
 
         p {
             margin-top: 20px;
