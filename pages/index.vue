@@ -6,6 +6,7 @@ import Testimonials from "@/components/index/testimonials.vue";
 import Features from "@/components/index/features.vue";
 import Episodes from "@/components/index/episodes.vue";
 import Price from "@/components/index/price.vue";
+import Blog from "@/components/index/blog.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Price from "@/components/index/price.vue";
     <Features />
     <Episodes />
     <Price />
+    <Blog />
 </template>
 
 <style scoped>

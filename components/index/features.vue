@@ -11,7 +11,7 @@ import TitleUi from "@/components/ui/titleUi.vue";
                 sub-title="Become our sponsor and get all benefits"
             >
                 <template #title-up>
-                    <img src="@/assets/imgs/features-scribble.svg" alt="">
+                    <img src="../../assets/imgs/scribble.svg" alt="">
                 </template>
             </TitleUi>
             <div class="features__container">
