@@ -83,7 +83,7 @@
             bottom: 0;
             left: -60px;
 
-            background: url("@/assets/imgs/quote-effect-1.svg") no-repeat center / cover;
+            background: url("@/assets/imgs/screw.svg") no-repeat center / cover;
         }
 
         &::after {
@@ -93,7 +93,7 @@
             top: -70px;
             right: -60px;
 
-            background: url("@/assets/imgs/quote-effect-2.svg") no-repeat center / cover;
+            background: url("@/assets/imgs/star.svg") no-repeat center / cover;
         }
     }
 </style>

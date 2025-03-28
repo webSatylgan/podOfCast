@@ -57,7 +57,7 @@ import PodcastCardUi from "@/components/ui/podcastCardUi.vue";
                 width: 125px;
                 height: 125px;
 
-                background: url("@/assets/imgs/episodes-sparkle.svg") no-repeat center / cover;
+                background: url("@/assets/imgs/half-sparkle.svg") no-repeat center / cover;
 
                 position: absolute;
                 top: -110px;
