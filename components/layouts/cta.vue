@@ -11,6 +11,7 @@
             <TitleScribbleUi
                 title="Available now Pod of Cast App"
                 sub-title="We just launched our podcast app!"
+                scribble-stroke="#cd4631"
             >
                 <template #title-up>
                     <button class="tag">BETA</button>
