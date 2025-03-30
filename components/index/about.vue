@@ -1,11 +1,14 @@
 <script setup>
-
-import QuoteCommon from "@/components/common/quoteCommon.vue";
+    // imports -----------------
+    import QuoteCommon from "@/components/common/quoteCommon.vue";
+    // ui
+    import ScribbleUi from "@/components/ui/scribbleUi.vue";
 </script>
 
 <template>
     <div class="about">
         <div class="container">
+            <ScribbleUi />
             <h2>Talk. Listen. Get inspired <br> by every minute of it.</h2>
             <div class="about__items flex">
                 <div>
@@ -24,6 +27,13 @@ import QuoteCommon from "@/components/common/quoteCommon.vue";
 
 <style lang="scss" scoped>
     .about {
+        position: relative;
+
+        .scribble {
+            top: -210px;
+
+            stroke: $red;
+        }
 
         h2 {
             margin-top: 140px;

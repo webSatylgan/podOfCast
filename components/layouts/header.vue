@@ -1,5 +1,5 @@
 <script setup>
-
+    // imports --------------------
     import LogoUi from "@/components/ui/logoUi.vue";
 </script>
 
@@ -23,6 +23,7 @@
 </template>
 
 <style lang="scss" scoped>
+    // header
     .header {
         max-width: 1200px;
         width: 100%;
@@ -34,6 +35,7 @@
         z-index: 10;
         transform: translateX(-50%);
 
+
         &__left-side {
             max-width: 515px;
         }
@@ -42,6 +44,7 @@
             max-width: 315px;
         }
 
+        // btns styling
         &__btns {
             max-width: 360px;
 

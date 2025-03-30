@@ -1,36 +1,37 @@
 <script setup>
+    // imports ---------------
+    import TitleScribbleUi from "@/components/ui/titleScribbleUi.vue";
+    import PodcastCardUi from "@/components/ui/podcastCardUi.vue";
 
-import TitleUi from "@/components/ui/titleUi.vue";
-import PodcastCardUi from "@/components/ui/podcastCardUi.vue";
+    // vars ----------------------
+    // alboms
+    const alboms = [
+        {albom: "/imgs/albom-1.jpg", title: "Are you a Perplexed Mind Person?", tags: ["automation", "tech"]},
+        {albom: "/imgs/albom-2.jpg", title: "Type of Social Classes of People", tags: ["self-esteem", "health"]},
+        {albom: "/imgs/albom-3.jpg", title: "How to Deal with Self–Confidence", tags: ["mind-behaviour", "health"]},
+        {albom: "/imgs/albom-4.jpg", title: "Women's Rights? Is it alright?", tags: ["women’s rights"]},
+        {albom: "/imgs/albom-5.jpg", title: "Tesla Autopilot Controversy", tags: ["social class", "wealth"]},
+        {albom: "/imgs/albom-6.jpg", title: "Pandemic Becoming Endemic", tags: ["covid-19", "health"]},
+    ];
+
 </script>
 
 <template>
     <div class="episodes">
         <div class="container">
-            <TitleUi
+            <TitleScribbleUi
                 title="Recent Episodes"
                 sub-title="Available on your favorite platform"
             />
 
             <div class="episodes__container flex">
                 <PodcastCardUi
+                    v-for="(albom, index) of alboms"
+                    :key="index"
 
+                    v-bind="{...albom, eps: alboms.length - index}"
                 />
-                <PodcastCardUi
 
-                />
-                <PodcastCardUi
-
-                />
-                <PodcastCardUi
-
-                />
-                <PodcastCardUi
-
-                />
-                <PodcastCardUi
-
-                />
             </div>
             <button>BROWSE ALL EPISODES</button>
         </div>

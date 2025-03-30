@@ -1,19 +1,27 @@
 <script setup>
+    // imports --------------------
+    import TitleScribbleUi from "@/components/ui/titleScribbleUi.vue";
+    import PostCardUi from "@/components/ui/postCardUi.vue";
 
-import TitleUi from "@/components/ui/titleUi.vue";
-import PostCardUi from "@/components/ui/postCardUi.vue";
+    const posts = [
+        {img: "/imgs/post-1.jpg", subTitle: "PODCAST", title: "Setup your own podcast", tags: ["business", "startup"], date: "Sep 14, 2021"},
+        {img: "/imgs/post-2.jpg", subTitle: "TIPS & TRICK", title: "Doodle artwork 101", tags: ["art", "creative", "tips and trick"], date: "Sep 12, 2021"},
+    ];
 </script>
 
 <template>
     <div class="blog">
         <div class="container">
-            <TitleUi
+            <TitleScribbleUi
                 title="Article and News"
                 sub-title="News, tips, tricks and more"
             />
             <div class="blog__container flex">
-                <PostCardUi />
-                <PostCardUi />
+                <PostCardUi
+                    v-for="(post, index) in posts"
+                    v-bind="post"
+                    :key="index"
+                />
             </div>
             <button>BROWSE ALL</button>
         </div>
@@ -22,7 +30,7 @@ import PostCardUi from "@/components/ui/postCardUi.vue";
 
 <style scoped lang="scss">
     .blog {
-        margin-top: 140px;
+        margin-top: 280px;
 
         &__container {
             margin-top: 100px;

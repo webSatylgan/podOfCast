@@ -6,12 +6,14 @@
 </script>
 
 <template>
-    <Header />
-    <main>
-        <slot />
-        <Cta />
-    </main>
-    <Footer />
+    <div>
+        <Header />
+        <main>
+            <slot />
+            <Cta />
+        </main>
+        <Footer />
+    </div>
 </template>
 
 <style scoped>

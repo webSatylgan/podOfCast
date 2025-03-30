@@ -1,19 +1,19 @@
 <script setup>
-
-import TitleUi from "@/components/ui/titleUi.vue";
+    // imports -------------------
+    import TitleScribbleUi from "@/components/ui/titleScribbleUi.vue";
 </script>
 
 <template>
     <div class="features">
         <div class="container">
-            <TitleUi
+            <TitleScribbleUi
                 title="Membership benefits"
                 sub-title="Become our sponsor and get all benefits"
             >
                 <template #title-up>
                     <img src="../../assets/imgs/scribble.svg" alt="">
                 </template>
-            </TitleUi>
+            </TitleScribbleUi>
             <div class="features__container">
                 <div class="features__item">
                     <img src="@/assets/imgs/features-1.svg" alt="">
@@ -53,8 +53,7 @@ import TitleUi from "@/components/ui/titleUi.vue";
 
 <style scoped lang="scss">
     .features {
-
-        margin-top: 140px;
+        margin-top: 140px;;
 
         .title img {
             max-width: 240px;

@@ -1,6 +1,8 @@
 <script setup>
+    // imports -------------------
     import QuoteUi from "@/components/ui/quoteUi.vue";
 
+    // props ------------------
     const props = defineProps({
        quote: String,
     });

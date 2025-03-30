@@ -1,23 +1,27 @@
 <script setup>
-
-import TitleUi from "@/components/ui/titleUi.vue";
+    // imports ------------------
+    import TitleScribbleUi from "@/components/ui/titleScribbleUi.vue";
+    import PlatformsUi from "@/components/ui/platformsUi.vue";
 </script>
 
 <template>
     <div class="cta">
         <img src="@/assets/imgs/cta.png" alt="">
         <div class="container">
-            <TitleUi
+            <TitleScribbleUi
                 title="Available now Pod of Cast App"
                 sub-title="We just launched our podcast app!"
             >
                 <template #title-up>
                     <button class="tag">BETA</button>
                 </template>
-            </TitleUi>
+            </TitleScribbleUi>
             <div class="cta__download">
                 <button>DOWNLOAD NOW</button>
                 <p class="text-sm">Content also available on:</p>
+                <div class="cta__platforms">
+                    <PlatformsUi />
+                </div>
             </div>
         </div>
     </div>
@@ -27,7 +31,7 @@ import TitleUi from "@/components/ui/titleUi.vue";
     .cta {
         width: 100%;
         margin-top: 140px;
-        padding: 200px 0;
+        padding: 140px 0;
 
         background-color: $blue-bg;
 
@@ -72,11 +76,31 @@ import TitleUi from "@/components/ui/titleUi.vue";
 
             button {
                 margin: 0 auto;
+
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+
+                    background: url("@/assets/imgs/half-sparkle.svg") no-repeat center / cover;
+
+                    position: absolute;
+                    top: -40px;
+                    right: -40px;
+                }
             }
 
             p {
                 margin-top: 25px;
             }
+        }
+
+        &__platforms {
+            max-width: 120px;
+            margin: 10px auto 0;
         }
     }
 

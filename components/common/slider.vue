@@ -1,27 +1,31 @@
 <script setup>
+    // imports -----------------
     import {onMounted} from "vue";
 
-
+    // vars -----------------
+    // refs
     const sliderWrapper = ref(null);
     const index = ref(0);
     const slides = ref([]);
 
+    // not reactive
     let sliderWidth = 0;
     let gap = 0;
     let lengthSlides = 0;
 
-
+    // functions --------------
     onMounted(() => {
         if(sliderWrapper.value) {
             slides.value = sliderWrapper.value.querySelectorAll(".slide");
 
-            gap = parseFloat(getComputedStyle(sliderWrapper.value).gap);
-            sliderWidth = slides.value[0].offsetWidth;
-            lengthSlides = slides.value.length;
+            gap = parseFloat(getComputedStyle(sliderWrapper.value).gap); // gaps
+            sliderWidth = slides.value[0].offsetWidth; // slide width
+            lengthSlides = slides.value.length; // slides count
         }
 
     })
 
+    // btns logic
     const nextBtn = () => {
         index.value = (index.value + 1) % lengthSlides;
     }

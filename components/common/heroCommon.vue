@@ -1,6 +1,8 @@
 <script setup>
+    // imports ----------------
     import {useSlots, computed} from "vue";
 
+    // props ---------------------
     const props = defineProps({
        paddingBottom: [Number, String],
         hasContainer: {
@@ -9,6 +11,7 @@
         }
     });
 
+    // vars --------------
     const slots = useSlots();
     const hasSlotTitle = computed(() => !!slots.title)
 </script>

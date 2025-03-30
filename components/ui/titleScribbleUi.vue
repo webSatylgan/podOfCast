@@ -1,12 +1,21 @@
 <script setup>
+    // imports -------------
+    import ScribbleUi from "@/components/ui/scribbleUi.vue";
+
+    // props ----------------
     const props = defineProps({
         title: String,
-        subTitle: String
+        subTitle: String,
+        scribbleStroke: {
+            type: String,
+            default: "#000"
+        }
     });
 </script>
 
 <template>
     <div class="title">
+        <ScribbleUi top="-210px" :stroke="scribbleStroke" />
         <slot name="title-up" />
         <h2>{{ title }}</h2>
         <p class="text-lg">{{ subTitle }}</p>

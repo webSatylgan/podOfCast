@@ -1,19 +1,19 @@
 <script setup>
-
-import TitleUi from "@/components/ui/titleUi.vue";
+    // imports ------------------
+    import TitleScribbleUi from "@/components/ui/titleScribbleUi.vue";
 </script>
 
 <template>
     <div class="price">
         <div class="container">
-            <TitleUi
+            <TitleScribbleUi
                 title="Become our sponsor"
                 sub-title="Get exclusive episodes, merch and more"
             >
                 <template #title-up>
                     <img class="price__title-sparkle" src="@/assets/imgs/half-sparkle.svg" alt="">
                 </template>
-            </TitleUi>
+            </TitleScribbleUi>
             <div class="price__container">
                 <div class="price__item">
                     <div class="price__type">

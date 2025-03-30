@@ -1,22 +1,27 @@
 <script setup>
-
+    // props
+    const props = defineProps({
+        albom: String,
+        title: String,
+        eps: Number,
+        tags: Array
+    });
 </script>
 
 <template>
     <div class="podcastCard">
         <div class="podcastCard__content flex">
-            <img src="/imgs/albom-1.jpg" alt="">
+            <img :src="albom" alt="">
             <div class="podcastCard__text">
-                <p class="podcastCard__sub-title">Eps. 1</p>
-                <h4>Are you a Perplexed Mind Person?</h4>
+                <p class="podcastCard__sub-title">Eps. {{eps}}</p>
+                <h4>{{title}}</h4>
                 <hr>
                 <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
             </div>
         </div>
         <div class="podcastCard__footer flex">
             <div class="podcastCard__tags flex">
-                <button class="tag">mind-behaviour</button>
-                <button class="tag">health</button>
+                <button class="tag" v-for="(tag, index) of tags" :key="index">{{tag}}</button>
             </div>
             <div class="podcastCard__host flex">
                 <p>Hosted by: </p>

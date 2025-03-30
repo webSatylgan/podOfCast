@@ -1,6 +1,9 @@
 <script setup>
+    // imports --------------------
     import HeroCommon from "@/components/common/heroCommon.vue";
+    import PlatformsUi from "@/components/ui/platformsUi.vue";
 
+    // covers ----------------
     const covers = [
         {img: "/imgs/albom-1.jpg", text: "Tesla Autopilot"},
         {img: "/imgs/albom-2.jpg", text: "Self–confidence"},
@@ -22,16 +25,8 @@
                 <div class="hero__cover" v-for="({img, text}, index) in covers" :key="index">
                     <img :src="img" alt="">
                     <h3>{{text}}</h3>
-                    <div class="hero__cover-links flex">
-                        <a href="">
-                            <img src="@/assets/imgs/gpodcast.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="@/assets/imgs/spotify.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="@/assets/imgs/youtube.svg" alt="">
-                        </a>
+                    <div class="hero__cover-links">
+                        <PlatformsUi fill="#fff" />
                     </div>
                 </div>
             </div>
@@ -60,7 +55,7 @@
             margin: 60px auto 0;
         }
     }
-
+    
     .hero__covers {
         justify-content: center;
         width: 100%;
@@ -98,16 +93,11 @@
 
                 &-links {
                     max-width: 100px;
-                    gap: 10px;
 
                     position: absolute;
                     top: 20px;
                     right: 20px;
 
-                    img {
-                        width: 24px;
-                        height: 24px;
-                    }
                 }
             }
         }
