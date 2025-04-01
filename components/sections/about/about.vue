@@ -97,9 +97,7 @@ import TitleUi from "@/components/ui/titleUi.vue";
 
         hr {
             margin-top: 80px;
-            border: none;
             height: .5px;
-            background: $graphite;
         }
 
         &__hosts {

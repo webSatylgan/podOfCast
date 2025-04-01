@@ -3,9 +3,10 @@
 import Hero from "@/components/sections/about/hero.vue";
 import About from "@/components/sections/about/about.vue";
 import Sponsors from "@/components/sections/about/sponsors.vue";
+import Contact from "@/components/sections/about/contact.vue";
 
 // components ----------------
-const components = [Hero, About, Sponsors];
+const components = [Hero, About, Sponsors, Contact];
 </script>
 
 <template>

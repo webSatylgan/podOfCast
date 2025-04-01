@@ -78,12 +78,7 @@ import Slider from "@/components/common/slider.vue";
 
             hr {
                 max-width: 350px;
-                width: 100%;
-                height: 1px;
                 margin-top: 20px;
-
-                border: none;
-                background: $graphite;
             }
 
             p {
