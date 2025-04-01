@@ -12,7 +12,7 @@
             sub-title="Their experience throughout every platform"
         >
             <template #title-up>
-                <img src="@/assets/imgs/sparkle.svg" alt="" class="testimonials__title-img">
+                <img src="../../../assets/imgs/sparkle.svg" alt="" class="testimonials__title-img">
             </template>
         </TitleScribbleUi>
         <div class="testimonials__container">
@@ -23,11 +23,11 @@
                         <p class="text-lg">Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. </p>
                         <div class="flex">
                             <p>
-                                <img class="testimonials__slide-avatar" src="@/assets/imgs/testimonials-1.jpg" alt="">
+                                <img class="testimonials__slide-avatar" src="../../../assets/imgs/testimonials-1.jpg" alt="">
                                 Luna lovegood,
                             </p>
                             <a href="">
-                                <img class="testimonials__slide-platform" src="@/assets/imgs/spotify-quote.svg" alt="">
+                                <img class="testimonials__slide-platform" src="../../../assets/imgs/spotify-quote.svg" alt="">
                                 Spotify
                             </a>
                         </div>
@@ -37,11 +37,11 @@
                         <p class="text-lg">Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. </p>
                         <div class="flex">
                             <p>
-                                <img class="testimonials__slide-avatar" src="@/assets/imgs/testimonials-2.jpg" alt="">
+                                <img class="testimonials__slide-avatar" src="../../../assets/imgs/testimonials-2.jpg" alt="">
                                 Luna lovegood,
                             </p>
                             <a href="">
-                                <img class="testimonials__slide-platform" src="@/assets/imgs/qpodcast-quote.svg" alt="">
+                                <img class="testimonials__slide-platform" src="../../../assets/imgs/qpodcast-quote.svg" alt="">
                                 Spotify
                             </a>
                         </div>
@@ -51,11 +51,11 @@
                         <p class="text-lg">Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. </p>
                         <div class="flex">
                             <p>
-                                <img class="testimonials__slide-avatar" src="@/assets/imgs/testimonials-3.jpg" alt="">
+                                <img class="testimonials__slide-avatar" src="../../../assets/imgs/testimonials-3.jpg" alt="">
                                 Luna lovegood,
                             </p>
                             <a href="">
-                                <img class="testimonials__slide-platform" src="@/assets/imgs/spotify-quote.svg" alt="">
+                                <img class="testimonials__slide-platform" src="../../../assets/imgs/spotify-quote.svg" alt="">
                                 Spotify
                             </a>
                         </div>

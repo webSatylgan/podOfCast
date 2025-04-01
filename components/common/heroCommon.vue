@@ -76,6 +76,7 @@
             p {
                 margin: 40px auto 0;
 
+                color: $graphite;
                 font-size: 1rem;
             }
         }

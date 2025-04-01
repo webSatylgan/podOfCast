@@ -35,9 +35,9 @@
             <div class="hero__sponsors flex">
                 <h4>Supported by:</h4>
                 <div class="flex">
-                    <img src="@/assets/imgs/sponsors-1.png" alt="">
-                    <img src="@/assets/imgs/sponsors-2.png" alt="">
-                    <img src="@/assets/imgs/sponsors-3.png" alt="">
+                    <img src="../../../assets/imgs/sponsors-1.png" alt="">
+                    <img src="../../../assets/imgs/sponsors-2.png" alt="">
+                    <img src="../../../assets/imgs/sponsors-3.png" alt="">
                 </div>
             </div>
         </div>

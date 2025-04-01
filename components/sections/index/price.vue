@@ -11,7 +11,7 @@
                 sub-title="Get exclusive episodes, merch and more"
             >
                 <template #title-up>
-                    <img class="price__title-sparkle" src="@/assets/imgs/half-sparkle.svg" alt="">
+                    <img class="price__title-sparkle" src="../../../assets/imgs/half-sparkle.svg" alt="">
                 </template>
             </TitleScribbleUi>
             <div class="price__container">

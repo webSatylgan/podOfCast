@@ -12,11 +12,11 @@
             <h2>Talk. Listen. Get inspired <br> by every minute of it.</h2>
             <div class="about__items flex">
                 <div>
-                    <img src="@/assets/imgs/about-1.png" alt="">
+                    <img src="../../../assets/imgs/about-1.png" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
                 </div>
                 <div>
-                    <img src="@/assets/imgs/about-2.png" alt="">
+                    <img src="../../../assets/imgs/about-2.png" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
                 </div>
             </div>

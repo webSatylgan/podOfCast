@@ -7,13 +7,13 @@
     <div class="container">
         <div class="header flex">
             <div class="header__left-side flex">
-                <NuxtLink href="/">
+                <NuxtLink to="/">
                     <LogoUi class="header__logo" />
                 </NuxtLink>
                 <nav>
-                    <NuxtLink href="/detail">Episodes</NuxtLink>
-                    <NuxtLink href="/about">About</NuxtLink>
-                    <NuxtLink href="">More</NuxtLink>
+                    <NuxtLink to="/detail">Episodes</NuxtLink>
+                    <NuxtLink to="/about">About</NuxtLink>
+                    <NuxtLink to="">More</NuxtLink>
                 </nav>
             </div>
             <div class="header__btns flex">

@@ -1,15 +1,15 @@
 <script setup>
     // imports ------------------------
-    import Hero from "@/components/index/hero.vue";
-    import About from "@/components/index/about.vue";
-    import Testimonials from "@/components/index/testimonials.vue";
-    import Features from "@/components/index/features.vue";
-    import Episodes from "@/components/index/episodes.vue";
-    import Price from "@/components/index/price.vue";
-    import Blog from "@/components/index/blog.vue";
+    import Hero from "@/components/sections/index/hero.vue";
+    import About from "@/components/sections/index/about.vue";
+    import Testimonials from "@/components/sections/index/testimonials.vue";
+    import Features from "@/components/sections/index/features.vue";
+    import Episodes from "@/components/sections/index/episodes.vue";
+    import Price from "@/components/sections/index/price.vue";
+    import Blog from "@/components/sections/index/blog.vue";
 
     // components ----------------
-    const components = {Hero, About, Testimonials, Features, Episodes, Price, Blog};
+    const components = [Hero, About, Testimonials, Features, Episodes, Price, Blog];
 </script>
 
 <template>
