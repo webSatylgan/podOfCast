@@ -52,6 +52,21 @@ import HeroCommon from "@/components/common/heroCommon.vue";
             position: absolute;
             bottom: -15%;
 
+
+            &::after {
+                content: "";
+                display: block;
+                width: 120px;
+                height: 120px;
+
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -120px;
+
+                background: url("@/assets/imgs/screw.svg") no-repeat center / contain;
+            }
+
             &-item {
                 display: flex;
                 flex-direction: column;

@@ -77,6 +77,22 @@ import TitleUi from "@/components/ui/titleUi.vue";
         & .container > h3 {
             max-width: 355px;
             margin: 60px auto 0;
+
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 65px;
+                height: 65px;
+
+                background: url("@/assets/imgs/half-sparkle.svg") no-repeat center / contain;
+
+                position: absolute;
+                left: -50px;
+                top: -40px;
+                transform: rotate(-90deg);
+            }
         }
 
         &__paragraphs {
@@ -106,6 +122,21 @@ import TitleUi from "@/components/ui/titleUi.vue";
             & > h3 {
                 max-width: 450px;
                 margin: 0 auto;
+
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+
+                    background: url("@/assets/imgs/scribble.svg") no-repeat center / contain;
+
+                    position: absolute;
+                    right: -30px;
+                    top: -70px;
+                }
             }
 
             &-container {
