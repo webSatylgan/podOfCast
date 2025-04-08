@@ -13,7 +13,7 @@
                 <nav>
                     <NuxtLink to="/detail">Episodes</NuxtLink>
                     <NuxtLink to="/about">About</NuxtLink>
-                    <NuxtLink to="">More</NuxtLink>
+                    <NuxtLink to="/blog">Blog</NuxtLink>
                 </nav>
             </div>
             <div class="header__btns flex">

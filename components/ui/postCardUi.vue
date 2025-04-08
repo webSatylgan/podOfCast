@@ -9,25 +9,25 @@
 </script>
 
 <template>
-    <div class="card">
-        <img :src="img" alt="">
-        <div class="card__text">
-            <p class="card__text-type text-sm">{{subTitle}}</p>
-            <h3>{{title}}</h3>
-            <p class="card__text-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
-            <div class="card__footer flex">
-                <div class="flex">
-                    <button
-                        class="tag"
+        <div class="card">
+            <img :src="img" alt="">
+            <div class="card__text">
+                <p class="card__text-type text-sm">{{subTitle}}</p>
+                <h3>{{title}}</h3>
+                <p class="card__text-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
+                <div class="card__footer flex">
+                    <div class="flex">
+                        <button
+                            class="tag"
 
-                        v-for="(tag, index) of tags"
-                        :key="index"
-                    >{{tag}}</button>
+                            v-for="(tag, index) of tags"
+                            :key="index"
+                        >{{tag}}</button>
+                    </div>
+                    <p>{{ date }}</p>
                 </div>
-                <p>{{ date }}</p>
             </div>
         </div>
-    </div>
 </template>
 
 <style lang="scss">
