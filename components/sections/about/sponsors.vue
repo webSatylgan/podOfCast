@@ -1,7 +1,7 @@
 <script setup>
 
 import TitleUi from "@/components/ui/titleUi.vue";
-import Slider from "@/components/common/slider.vue";
+import SliderCommon from "@/components/common/sliderCommon.vue";
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import Slider from "@/components/common/slider.vue";
             />
 
             <div class="sponsors__slider">
-                <Slider>
+                <SliderCommon>
                     <div class="sponsors__slide slide">
                         <img src="@/assets/imgs/about-sponsor-1.svg" alt="">
                         <hr>
@@ -35,7 +35,7 @@ import Slider from "@/components/common/slider.vue";
                             que purus in sed sodales in mauris molestie. Eleifend estcon
                             sctetur interdum eu in auctor. Gravida leo et.</p>
                     </div>
-                </Slider>
+                </SliderCommon>
             </div>
         </div>
     </div>

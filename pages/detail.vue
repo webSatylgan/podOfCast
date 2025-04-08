@@ -1,10 +1,11 @@
 <script setup>
 // imports ------------------------
 import Hero from "@/components/sections/detail/hero.vue";
+import Categories from "@/components/sections/detail/categories.vue";
 
 
 // components ---------------
-const components = [Hero];
+const components = [Hero, Categories];
 
 </script>
 

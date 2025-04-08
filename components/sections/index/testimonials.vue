@@ -1,6 +1,6 @@
 <script setup>
     // imports ------------------
-    import Slider from "@/components/common/slider.vue";
+    import SliderCommon from "@/components/common/sliderCommon.vue";
     import QuoteUi from "@/components/ui/quoteUi.vue";
     import TitleScribbleUi from "@/components/ui/titleScribbleUi.vue";
 </script>
@@ -17,7 +17,7 @@
         </TitleScribbleUi>
         <div class="testimonials__container">
             <div class="container">
-                <Slider>
+                <SliderCommon>
                     <div class="testimonials__slide slide">
                         <QuoteUi />
                         <p class="text-lg">Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. </p>
@@ -60,7 +60,7 @@
                             </a>
                         </div>
                     </div>
-                </Slider>
+                </SliderCommon>
             </div>
         </div>
     </div>
