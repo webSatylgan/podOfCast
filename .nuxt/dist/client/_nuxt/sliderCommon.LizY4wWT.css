@@ -1,0 +1,1 @@
+.slider__wrapper{gap:20px;transition:.2s}.slider__btns{margin-top:60px;max-width:120px}.slider__btns svg{cursor:pointer;height:40px;width:40px}.slider__btns svg path{stroke:#000;transition:.2s}.slider__btns svg:last-child{transform:rotate(180deg)}.slider__btns svg:hover path{stroke:#cd4631}
