@@ -67,4 +67,16 @@
         }
 
     }
+
+    // media ------------------
+    @media (max-width: 600px) {
+        .about__items {
+            flex-direction: column;
+            justify-content: center;
+
+            div {
+                max-width: 85%;
+            }
+        }
+    }
 </style>

@@ -48,6 +48,7 @@
         &__container {
             gap: 20px;
             flex-wrap: wrap;
+            justify-content: center;
 
             margin-top: 100px;
 
@@ -68,6 +69,19 @@
 
         button {
             margin: 100px auto 0;
+        }
+    }
+    
+    // media ----------------------
+    @media (max-width: 1340px) {
+        .episodes__container::after {
+            right: -45px;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .episodes__container::after {
+            content: none;
         }
     }
 </style>

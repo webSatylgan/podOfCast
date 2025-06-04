@@ -132,4 +132,27 @@
         }
     }
 
+
+    @media (max-width: 1000px) {
+        .hero__covers-wrapper .hero__cover {
+            min-width: 250px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .hero__sponsors {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding: 25px 55px;
+
+
+            div {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    }
+
 </style>

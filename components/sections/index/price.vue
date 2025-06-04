@@ -252,4 +252,22 @@
         }
 
     }
+    
+    // media -----------------------
+    @media (max-width: 1300px) {
+        .price__container::before,
+        .price__container::after {
+            content: none;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .price__container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            max-width: 400px;
+            margin: 30px auto 0;
+        }
+    }
 </style>

@@ -87,7 +87,6 @@
 
         &__tags {
             gap: 5px;
-            max-width: 40%;
             width: auto;
         }
 
@@ -121,6 +120,26 @@
             & h4 {
                 color: $red;
             }
+        }
+    }
+
+    // media -------------------------
+    @media (max-width: 500px) {
+        .podcastCard__content {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .podcastCard__footer {
+            flex-direction: column;
+        }
+
+        .podcastCard__tags {
+            max-width: 100% !important;
         }
     }
 </style>

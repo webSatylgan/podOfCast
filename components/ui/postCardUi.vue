@@ -72,7 +72,6 @@
 
                 div {
                     gap: 5px;
-                    max-width: 50%;
                     width: auto;
 
                     button {
@@ -88,4 +87,22 @@
             }
         }
     }
+    
+    // meida ------------------
+
+    // media --------------------
+    @media (max-width: 600px) {
+        .card__text .card__footer div.flex {
+            max-width: none;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        .card__footer {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+
 </style>

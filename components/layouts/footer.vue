@@ -183,4 +183,38 @@
         }
 
     }
+    
+    // media ---------------------
+    @media (max-width: 700px) {
+        .footer__container {
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .footer__container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footer__item-main {
+            .footer__logo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer__socials {
+                margin: 40px auto 0;
+            }
+        }
+
+        .footer__item-platforms .footer__item-app div {
+            margin: 30px auto 0;
+        }
+
+    }
 </style>

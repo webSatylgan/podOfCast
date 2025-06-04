@@ -1,6 +1,11 @@
 <script setup>
     // imports --------------------
     import LogoUi from "@/components/ui/logoUi.vue";
+    const emit = defineEmits(["toggle"])
+    const props = defineProps({
+       isBurgerOpen: Boolean
+    });
+
 </script>
 
 <template>
@@ -19,6 +24,11 @@
             <div class="header__btns flex">
                 <button class="tag">RECENT EPISODES</button>
                 <button>SUBSCRIBE</button>
+            </div>
+            <div class="header__burger-menu" :class="{active: isBurgerOpen}" @click="emit('toggle')">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
@@ -65,6 +75,74 @@
                 color: $black;
             }
 
+        }
+
+        &__burger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            width: 30px;
+            cursor: pointer;
+
+            span {
+                width: 100%;
+                height: 2px;
+                background: $black;
+                border-radius: 8px;
+                transform-origin: center;
+                transition: 0.2s;
+            }
+
+            &.active {
+                span:first-child {
+                    transform: translateY(10px) rotate(45deg);
+                }
+
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+
+                span:last-child {
+                    transform: translateY(-10px) rotate(-45deg);
+                }
+            }
+        }
+
+    }
+    
+    // media ------------
+    @media (max-width: 1000px) {
+        .header__left-side {
+            max-width: 320px;
+        }
+
+        .header nav {
+            max-width: 200px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+
+        .header__burger-menu {
+            display: flex;
+        }
+
+        .header__left-side {
+            width: auto;
+        }
+
+        .header nav {
+            display: none;
+        }
+
+        .header__btns {
+            max-width: 320px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .header__btns {
+            display: none;
         }
     }
 </style>

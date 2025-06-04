@@ -78,4 +78,29 @@
             margin: 100px auto 0;
         }
     }
+
+    // media --------------------
+    @media (max-width: 1300px) {
+        .blog__container::before,
+        .blog__container::after {
+            content: none;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .blog__container {
+            flex-direction: column;
+            justify-content: center;
+
+            .card {
+                width: 85%;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .blog__container .card {
+            width: 100%;
+        }
+    }
 </style>

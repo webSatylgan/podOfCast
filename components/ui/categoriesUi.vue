@@ -28,10 +28,22 @@
 
             font-weight: 500;
             font-size: 1.375rem;
-            text-transform: capitalize;
+            text-transform: lowercase;
 
             &:hover {
                 color: $red;
+            }
+        }
+    }
+
+    // media --------------------
+    @media (max-width: 500px) {
+        .categories-btns {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a {
+                padding: 0 8px;
             }
         }
     }

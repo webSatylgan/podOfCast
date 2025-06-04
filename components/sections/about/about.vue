@@ -78,6 +78,8 @@ import TitleUi from "@/components/ui/titleUi.vue";
             max-width: 355px;
             margin: 60px auto 0;
 
+            text-align: center;
+
             position: relative;
 
             &::before {
@@ -123,6 +125,8 @@ import TitleUi from "@/components/ui/titleUi.vue";
                 max-width: 450px;
                 margin: 0 auto;
 
+                text-align: center;
+                
                 position: relative;
 
                 &::after {
@@ -207,6 +211,59 @@ import TitleUi from "@/components/ui/titleUi.vue";
                 }
             }
 
+        }
+    }
+
+    // media -------------------------
+    @media (max-width: 950px) {
+        .about__hosts-container {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .about__hosts-item {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .about__paragraphs {
+            flex-direction: column;
+            gap: 50px;
+
+            p {
+                max-width: 300px;
+            }
+        }
+
+        .about__hosts > h3::after {
+            content: none;
+        }
+
+        .about__hosts-item .about__hosts-svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .about__hosts-item {
+            flex-direction: column;
+            align-items: center;
+
+            & > img:first-child {
+                width: 70%;
+            }
+
+            & > div {
+                width: 100%;
+            }
+        }
+
+        .about__hosts-item .about__hosts-svg  {
+            right: 12px;
+            top: 12px;
         }
     }
 </style>

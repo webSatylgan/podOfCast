@@ -99,4 +99,22 @@
         }
 
     }
+
+
+    // media -----------------
+
+    @media (max-width: 700px) {
+        .features .title img {
+            top: -165px;
+            left: 50%;
+            right: 0;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (max-width: 560px) {
+        .features__container {
+            justify-content: center;
+        }
+    }
 </style>

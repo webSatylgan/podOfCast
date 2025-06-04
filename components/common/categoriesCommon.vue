@@ -59,6 +59,7 @@
 
         &__cards {
             flex-wrap: wrap;
+            align-items: self-start;
             margin-top: 100px;
         }
     }

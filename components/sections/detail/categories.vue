@@ -24,7 +24,7 @@
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
     .categories-deatail {
         padding: 140px 0;
 
@@ -34,6 +34,23 @@
 
         .categories {
             margin-top: 100px;
+        }
+    }
+    
+    // media -----------------
+    @media (max-width: 1200px) {
+        .categories__cards {
+            justify-content: center;
+        }
+
+        .podcastCard {
+            max-width: 620px;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .categories-deatail {
+            padding-top: 220px;
         }
     }
 </style>

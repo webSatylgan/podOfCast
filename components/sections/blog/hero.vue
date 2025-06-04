@@ -25,6 +25,7 @@ import HeroCommon from "@/components/common/heroCommon.vue";
         max-width: 570px;
         width: 100%;
         height: 75px;
+        padding: 0 15px;
 
         position: absolute;
         bottom: -38px;

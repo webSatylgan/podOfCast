@@ -88,4 +88,11 @@ import SliderCommon from "@/components/common/sliderCommon.vue";
             }
         }
     }
+
+    // media -------------------
+    @media (max-width: 600px) {
+        .sponsors__slide {
+            min-width: 100%;
+        }
+    }
 </style>

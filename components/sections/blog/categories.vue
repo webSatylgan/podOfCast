@@ -23,7 +23,7 @@
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
     .category-blog {
         padding-top: 180px;
 
@@ -37,6 +37,23 @@
 
         :deep(.card) {
             width: 49%;
+        }
+    }
+
+    // media -------------------------
+    @media (max-width: 800px) {
+        .category-blog .card {
+            width: 80%;
+        }
+
+        .categories__cards {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .category-blog .card {
+            width: 95%;
         }
     }
 </style>

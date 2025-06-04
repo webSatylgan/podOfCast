@@ -105,4 +105,22 @@ import TitleUi from "@/components/ui/titleUi.vue";
             }
         }
     }
+    
+    // media --------------
+    @media (max-width: 535px) {
+
+        .contact .contact__form-container {
+            flex-direction: column;
+        }
+
+        .contact .contact__form-input {
+            width: 100%;
+        }
+
+        .contact .contact__form-btn p {
+            max-width: 90px;
+        }
+
+
+    }
 </style>

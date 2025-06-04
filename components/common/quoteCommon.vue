@@ -98,4 +98,18 @@
             background: url("@/assets/imgs/star.svg") no-repeat center / cover;
         }
     }
+    
+    
+    // media ---------------
+    @media (max-width: 1100px) {
+        .quote {
+            overflow: hidden;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        .quote div {
+            flex-direction: column;
+        }
+    }
 </style>

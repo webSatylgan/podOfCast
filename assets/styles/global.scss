@@ -170,3 +170,24 @@ hr {
     gap: 15px;
     width: 100%;
 }
+
+// media --------------------------
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+}

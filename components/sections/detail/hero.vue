@@ -226,4 +226,47 @@
             }
         }
     }
+    
+    // media ---------------------
+    @media (max-width: 1200px) {
+        .hero__thumbnail {
+            max-width: 370px;
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        .hero {
+            padding-top: 100px;
+
+            &__container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            &__tags {
+                margin-top: 0;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .hero__container::after {
+            content: none;
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        .hero {
+            padding-top: 150px;
+        }
+
+        .hero__thumbnail {
+            max-width: 310px;
+        }
+
+        .hero__text .hero__btns {
+            flex-direction: column;
+        }
+    }
 </style>

@@ -130,4 +130,19 @@
             }
         }
     }
+
+    // media ---------------
+    @media (max-width: 550px) {
+        .testimonials__slide {
+            min-width: 100%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .testimonials__slide div {
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+    }
 </style>

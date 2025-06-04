@@ -99,4 +99,56 @@ import HeroCommon from "@/components/common/heroCommon.vue";
         }
 
     }
+
+    // meida -------------------
+    @media (max-width: 1500px) {
+
+        .hero__count {
+
+            max-width: 95%;
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    @media (max-width: 1050px) {
+        .hero__count-item {
+            padding: 35px;
+        }
+    }
+    
+    @media (max-width: 900px) {
+
+        .hero__count {
+            bottom: -10%;
+
+            &-item {
+                padding: 25px;
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+        .hero__count {
+            flex-direction: column;
+            max-width: 100%;
+            margin-top: 60px;
+            margin-bottom: -40px;
+
+            position: static;
+
+            &-item {
+                max-width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .hero__title .hero__btns {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
 </style>
